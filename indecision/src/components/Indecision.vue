@@ -93,6 +93,7 @@ img, .bg-dark{
         font-size: 4rem;
         font-family: 'Courier New', Courier, monospace;
         color: white;
+        background-color: black;
     }
 
     &__input{
@@ -110,6 +111,7 @@ img, .bg-dark{
         color: white;
         font-size: 28px;
         margin-top:0px;
+        background-color: black;
     }
     &__action-area{
         &__questions, &__answers{
