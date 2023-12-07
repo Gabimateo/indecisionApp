@@ -6,7 +6,7 @@
     <span 
     class="indecision-container__title"
     >
-    PREGUNTANDO!!
+    PREGUNTANDO!!!
 </span>
     <input 
     class="indecision-container__input" 
