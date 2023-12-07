@@ -34,13 +34,14 @@ import {getYesOrNo} from '../api/yesno.api'
 
 import IndecisionViewState from './indecision.view-state'
 
-const state = new IndecisionViewState();
-const state$$ = reactive(state)
 
-const questionsRef = ref('')
-const questionsIncludeRef = ref()
 const answerRef = ref(null);
 const imgRef = ref('https://image.freepik.com/vector-gratis/fondo-preguntas_23-2148159239.jpg')
+const questionsIncludeRef = ref()
+const questionsRef = ref('')
+
+const state = new IndecisionViewState();
+const state$$ = reactive(state)
 
 async function getAnswerYesOrNo(){
     if(!questionsRef.value){
@@ -83,33 +84,47 @@ img, .bg-dark{
 }
 .indecision-container{
     display: flex;
+    flex-direction: column;
     position: relative;
     z-index: 99;
-    flex-direction: column;
 
     &__title{
-        position: relative;
-        margin-bottom: 2rem;
-        font-size: 4rem;
-        font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(98, 98, 98);
         color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 4rem;
+        left: 30%;
+        margin-bottom: 2rem;
+        max-width: auto;
+        min-width: auto;
+        position: relative;
+        right: 30%;
+        width: 50%;
     }
 
     &__input{
-        position: relative;
-        left: 10%;
-        width: 80%;
-        padding: 10px 15px;
         border-radius: 5px;
         border: none;
+        left: 10%;
+        padding: 10px 15px;
+        position: relative;
+        width: 80%;
     }
     &__input:focus{
         outline: name;
     }
     &__text{
+        background-color: rgb(98, 98, 98);
         color: white;
         font-size: 28px;
-        margin-top:0px;
+        left: 30%;
+        margin-top:1rem;
+        max-width: auto;
+        min-width: auto;
+        position: relative;
+        right: 30%;
+        width: 50%;
+        
     }
     &__action-area{
         &__questions, &__answers{
