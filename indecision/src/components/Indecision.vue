@@ -88,6 +88,15 @@ img, .bg-dark{
     flex-direction: column;
 
     &__title{
+        background-color: rgb(98, 98, 98);
+        border-radius: 20px;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 4rem;
+        left: 30%;
+        margin-bottom: 2rem;
+        max-width: auto;
+        min-width: auto;
         position: relative;
         margin-bottom: 2rem;
         font-size: 4rem;
@@ -108,6 +117,8 @@ img, .bg-dark{
         outline: name;
     }
     &__text{
+        background-color: rgb(98, 98, 98);
+        border-radius: 20px;
         color: white;
         font-size: 28px;
         margin-top:0px;
