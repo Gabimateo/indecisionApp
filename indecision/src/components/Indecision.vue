@@ -90,6 +90,7 @@ img, .bg-dark{
 
     &__title{
         background-color: rgb(98, 98, 98);
+        border-radius: 20px;
         color: white;
         font-family: 'Courier New', Courier, monospace;
         font-size: 4rem;
@@ -115,6 +116,7 @@ img, .bg-dark{
     }
     &__text{
         background-color: rgb(98, 98, 98);
+        border-radius: 20px;
         color: white;
         font-size: 28px;
         left: 30%;
